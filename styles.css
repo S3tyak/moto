@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f7f7f7;
+    line-height: 1.6;
+}
+
+header {
+    background-image: url('images/header_background.jpg');
+    color: white;
+    padding: 20px;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+}
+
+header h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+section {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    margin-bottom: 10px;
+}
+
+.about-image,
+.service-image {
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+    border-radius: 8px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    background-color: #333;
+    color: white;
+}
+
+/* Адаптивные стили для мобильных устройств */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    header p {
+        font-size: 0.9em;
+    }
+
+    section {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    h1, h2 {
+        font-size: 1.2em;
+    }
+
+    .about-image,
+    .service-image {
+        margin-top: 10px;
+        width: 100%;
+        border-radius: 6px;
+    }
+
+    ul li {
+        font-size: 0.9em;
+    }
+
+    footer {
+        padding: 10px 5px;
+    }
+}
+
+
+/* Основные стили */
+
+.contact-form button#contactButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-form button#contactButton:hover {
+    background-color: #555;
+}
+
+/* Стили модального окна */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    position: relative;
+    margin: 5% auto;
+    padding: 20px;
+    background-color: white;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 8px;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Стили формы */
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.contact-form button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-form button:hover {
+    background-color: #555;
+}
+
+/* Адаптивные стили для мобильных устройств */
+@media (max-width: 768px) {
+    .modal-content {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 14px;
+    }
+}
+
+/* Стили для кнопки открытия формы */
+.contact-button {
+    display: block;
+    margin: 0 auto 20px auto; /* Центрирование и отступ снизу */
+    padding: 15px 30px; /* Размер кнопки */
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #ff5733; /* Привлекательный яркий цвет */
+    border: none;
+    border-radius: 30px; /* Закругленные углы */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #ff8566; /* Светлее при наведении */
+}
+
+/* Стили модального окна */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    position: relative;
+    margin: 5% auto;
+    padding: 20px;
+    background-color: white;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 8px;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Стили формы */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.contact-form button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-form button:hover {
+    background-color: #555;
+}
+
+/* Адаптивные стили для мобильных устройств */
+@media (max-width: 768px) {
+    .modal-content {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 14px;
+    }
+
+    .contact-button {
+        font-size: 16px;
+        padding: 12px 24px;
+    }
+}
